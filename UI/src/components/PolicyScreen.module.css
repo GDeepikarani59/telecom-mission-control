@@ -1,0 +1,81 @@
+.container {
+  padding: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.edit {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  margin-right: 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+.delete {
+  background-color: var(--error-color);
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--border-radius);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  width: 90%;
+  max-width: 500px;
+  font-family: var(--font-family);
+}
+
+.modalContent h3 {
+  margin-top: 0;
+}
+
+.modalContent label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.modalContent input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.4rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

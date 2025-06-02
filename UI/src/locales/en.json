@@ -1,0 +1,10 @@
+{
+  "login": "Login",
+  "username": "User Name",
+  "usernamePlaceholder": "Enter your user name",
+  "password": "Password",
+  "passwordPlaceholder": "Enter your password",
+  "loggingIn": "Logging in...",
+  "loginButton": "Login",
+  "loginError": "Invalid username or password"
+}

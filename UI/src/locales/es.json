@@ -1,0 +1,10 @@
+{
+  "login": "Iniciar sesión",
+  "username": "Nombre de usuario",
+  "usernamePlaceholder": "Introduce tu nombre de usuario",
+  "password": "Contraseña",
+  "passwordPlaceholder": "Introduce tu contraseña",
+  "loggingIn": "Iniciando sesión...",
+  "loginButton": "Acceder",
+  "loginError": "Nombre de usuario o contraseña incorrectos"
+}

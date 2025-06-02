@@ -1,0 +1,120 @@
+/* UserScreen.module.css */
+
+:root {
+  --primary-color: #2563eb;
+  --primary-hover: #1e40af;
+  --error-color: #dc2626;
+  --background: #f9fafb;
+  --text-color: #111827;
+  --border-color: #d1d5db;
+  --focus-outline: #2563eb;
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --border-radius: 6px;
+  --max-width: 480px;
+}
+
+.container {
+  padding: 2rem;
+  background-color: var(--background);
+  font-family: var(--font-family);
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: var(--max-width);
+  margin-bottom: 2rem;
+}
+
+.form label {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.form input,
+.form select {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.form button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form button:hover {
+  background-color: var(--primary-hover);
+}
+
+.error {
+  color: var(--error-color);
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.userList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.userItem {
+  background: white;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.role {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  font-family: var(--font-family);
+}
+
+.userTable th,
+.userTable td {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.userTable th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.userTable tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+.userTable tr:focus-within {
+  outline: 2px solid var(--focus-outline);
+  outline-offset: 2px;
+}

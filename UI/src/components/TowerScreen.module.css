@@ -1,0 +1,38 @@
+.container {
+  padding: 1rem;
+  max-width: 768px;
+  margin: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+
+.cardList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+
+.card:focus {
+  outline: 2px solid var(--focus-outline);
+  outline-offset: 2px;
+}
